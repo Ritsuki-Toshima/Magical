@@ -1,7 +1,7 @@
 Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by Ritsuki Toshima
 
 
-# Magical Banana🍌 - Make a world a little bit better by the power of banana🍌
+## Magical Banana🍌 - Make a world a little bit better by the power of banana🍌
 Welcome to magical banana! Are you feeling depressed? Are you tried of negative words and environment surrounding you? Then, why not using Magical Banana🍌? Magical Banana helps you stay positive and motivated! Let's be happy together! May the power of banana with you🍌 
 
 <br>
