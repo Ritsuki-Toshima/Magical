@@ -48,6 +48,30 @@ ritsuki_1_feed = Feed.new(
 )
 ritsuki_1_feed.save!
 
+ritsuki_2_feed = Feed.new(
+  content_positive: "Yep",
+  content_negative: "Nope",
+  like: rand(0..20),
+  user_id: ritsuki.id
+)
+ritsuki_2_feed.save!
+
+mike_1_feed = Feed.new(
+  content_positive: "plus",
+  content_negative: "minus",
+  like: rand(0..20),
+  user_id: mike.id
+)
+mike_1_feed.save!
+
+mike_2_feed = Feed.new(
+  content_positive: "Wow",
+  content_negative: "Boo",
+  like: rand(0..20),
+  user_id: mike.id
+)
+mike_2_feed.save!
+
 # voices
 ritsuki_1_voice = Voice.new(
   script: "頑張れ！！",
