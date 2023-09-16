@@ -14,6 +14,14 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_11_083553) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "email"
+    t.string "nationality"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "favorites", force: :cascade do |t|
     t.bigint "feed_id", null: false
     t.datetime "created_at", null: false
@@ -30,14 +38,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_11_083553) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_feeds_on_user_id"
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string "username"
-    t.string "email"
-    t.string "nationality"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "voices", force: :cascade do |t|
