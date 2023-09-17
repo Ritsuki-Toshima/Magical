@@ -24,7 +24,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_11_083553) do
   create_table "feeds", force: :cascade do |t|
     t.text "content_positive"
     t.text "content_negative"
-    t.integer "like"
+    t.integer "like", default: 0
     t.text "comment"
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
