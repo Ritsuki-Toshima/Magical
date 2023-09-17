@@ -25,7 +25,7 @@ puts "Creating Users"
 # users
 ritsuki = User.new(
   email: "ricky0912t@gmail.com",
-  password: "123456",
+  # password: "123456",
   username: "ritsuki",
   nationality: "Japan"
 )
@@ -33,7 +33,7 @@ ritsuki.save!
 
 mike = User.new(
   email: "hand0912r@gmail.com",
-  password: "123456",
+  # password: "123456",
   username: "mike",
   nationality: "Canada"
 )
