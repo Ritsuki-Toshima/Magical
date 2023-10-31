@@ -1,2 +1,8 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container">
+  <h1 class="text-center">Hi, this is Magical Banana!</h1>
+  <button>Click to be positive!</button>
+  <div class="d-flex justify-content-center align-items-center">
+    <%= link_to "create new banana", feeds_path, class: "me-2" %>
+    <%= link_to "see bananas", feeds_path, class: "ms-2"  %>
+  </div>
+</div>
